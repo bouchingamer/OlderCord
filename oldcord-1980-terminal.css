@@ -1,0 +1,92 @@
+/**
+ * @name OldCord 1980 Terminal
+ * @description Makes Discord look like an 1980s terminal / BBS system
+ * @version 1.0
+ */
+/* =========================
+   TERMINAL CORE
+========================= */
+* {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  font-family: "Courier New", monospace !important;
+  font-size: 12px !important;
+}
+/* =========================
+   BLACK TERMINAL SCREEN
+========================= */
+.theme-dark {
+  background: #000000 !important;
+}
+/* =========================
+   REMOVE ALL MODERN UI FEEL
+========================= */
+.guilds,
+.sidebar,
+.container__2637a,
+.chatContent,
+.contentRegion {
+  background: transparent !important;
+  border: none !important;
+}
+/* =========================
+   CHAT = TERMINAL OUTPUT
+========================= */
+.messageContent {
+  background: transparent !important;
+  color: #00ff66 !important;
+  padding: 0px !important;
+  margin: 2px 0 !important;
+}
+/* =========================
+   INPUT = COMMAND LINE
+========================= */
+.scrollableContainer {
+  background: #000000 !important;
+  border: 1px solid #00ff66 !important;
+}
+/* =========================
+   TEXT = PHOSPHOR GREEN MONITOR
+========================= */
+body, span, div {
+  color: #00ff66 !important;
+}
+/* muted text */
+small, .text-muted {
+  color: #007733 !important;
+}
+/* =========================
+   LINKS = OLD TERMINAL STYLE
+========================= */
+a {
+  color: #00ffcc !important;
+  text-decoration: underline !important;
+}
+/* =========================
+   BUTTONS = DISABLED TERMINAL LOOK
+========================= */
+button {
+  background: transparent !important;
+  border: 1px solid #00ff66 !important;
+  color: #00ff66 !important;
+}
+/* hover = blinking terminal effect */
+button:hover {
+  background: rgba(0, 255, 102, 0.1) !important;
+}
+/* =========================
+   SELECTION = CRT HIGHLIGHT
+========================= */
+::selection {
+  background: #00ff66;
+  color: #000;
+}
+/* =========================
+   SCROLLBAR = MINIMAL
+========================= */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00ff66;
+}
